@@ -4,7 +4,7 @@ public class LinkedList {
         head = null;
     }
 
-    public void InsertAtHead(int data){
+    public void InsertAtHead(Student data){
         /*
         Create new node
         Point its next to head
@@ -28,7 +28,7 @@ public class LinkedList {
         return trav;
     }
 
-    public void InsertAtTail(int data){
+    public void InsertAtTail(Student data){
         // When Linked List is empty
         if(head == null){
             Node nd = new Node(data);
@@ -71,7 +71,8 @@ public class LinkedList {
     public void printList(){
         Node trav = head;
         while(trav != null){
-            System.out.print(trav.data + " ");
+            //System.out.print(trav.data + " ");
+            trav.data.printData();
             trav = trav.next;
         }
         System.out.println();

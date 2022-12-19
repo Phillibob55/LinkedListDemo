@@ -8,6 +8,10 @@ public class Main{
 
         list.printList();
 
+        list.delete(1);
+
+        list.printList();
+
     }
 }
 
