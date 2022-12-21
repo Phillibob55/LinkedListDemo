@@ -11,6 +11,9 @@ public class Student {
     }
 
     //Parametrized Constructor
+    public Student(int id){
+        this.id = id;
+    }
     public Student(String name, int id, float score){
         this.name = name;
         this.id = id;
